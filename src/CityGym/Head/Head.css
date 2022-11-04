@@ -1,0 +1,31 @@
+.Head{
+    display: flex;
+    justify-content: space-between;
+}
+.City{
+    Width: 10rem;
+    height: 3rem;
+}
+.Head-menu{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    color: white;
+}
+.Head-menu>li:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+  .Head>:nth-child(2){
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  } 
+  .Head-menu{
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgb(47, 44, 44);
+    gap: 1rem;
+  } 
+}

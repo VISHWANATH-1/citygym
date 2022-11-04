@@ -1,0 +1,103 @@
+.Test{
+    background-color: rgb(89, 81, 81);
+    gap: 1rem;
+    display: flex;
+    padding: 0 2rem;
+}
+.left-t{
+    display: flex;
+    gap: 2rem;
+    flex: 1 1;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+.left-t>:nth-child(1){
+    color: orange;
+    font-weight: bold;
+    margin-top: 4rem;
+}
+.left-t>:nth-child(2),
+.left-t>:nth-child(3){
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.left-t>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.right-t{
+    flex: 1;
+    position: relative;
+}
+.right-t>img{
+    margin-top: 4rem;
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+.right-t>:nth-child(1){
+    margin-top: 4rem;
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+.right-t>:nth-child(2){
+    margin-top: 4rem;
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    right: 7rem;
+    top: 4rem;
+    background: orangered;
+}
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+   .Test{
+    flex-direction: column;
+   }
+   .left-t>:nth-child(2),
+   .left-t>:nth-child(3){
+    font-size: xx-large;
+   }
+   .right-t{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+   }
+   .right-t>div{
+    position: relative;
+    display: none;
+   }
+   .right-t>img{
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+   }
+   .right-t>:last-child{
+    display: block;
+    bottom: 0;left: 0;
+   }
+}

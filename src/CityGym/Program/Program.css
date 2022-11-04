@@ -1,0 +1,70 @@
+.Program{
+    background-color: rgb(89, 81, 81);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+.Program_header{
+    display: flex;
+    gap: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-style: italic;
+    margin-top: 5rem;
+}
+.Program-catagory{
+    display: flex;
+    gap: 1rem;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 2rem;
+    gap: 1rem;
+    color: white;
+    justify-content: space-between;
+}
+.category>:nth-child(1){
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+}
+.category>:nth-child(2){
+   font-size: 1rem;
+   font-weight: bold;
+}
+.category>:nth-child(3){
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+.Join-Now{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.Join-Now>img{
+    width: 1rem;
+}
+.category:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+ .Program_header{
+    flex-direction: column;
+    grid-template: 1rem;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 6rem;
+ } 
+ .Program-catagory{
+    flex-direction: column;
+ }
+}

@@ -1,0 +1,47 @@
+.Foot{
+    position: relative;
+    background-color: rgb(89, 81, 81);
+}
+.Foot>hr{
+    position: absolute;
+    width: 100%;
+    border: 1px solid white;
+    margin: 5px 0;
+}
+.footer{
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    margin: -10px 0;
+}
+.Social{
+    display: flex;
+    gap: 4rem;
+}
+.Social>img{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+/*.blur-f-1{
+    bottom: 0;
+    right: 15%;
+    width: 26rem;
+    height: 12rem;
+    filter: blur(200px);
+    background: red;
+}
+.blur-f-2{
+    bottom: 0;
+    right: 15%;
+    width: 26rem;
+    height: 12rem;
+    filter: blur(200px);
+    background: rgb(255, 115, 0);
+}*/
